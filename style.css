@@ -1,0 +1,120 @@
+/*css reset*/
+*{box-sizing: border-box;padding: 0;margin:0;}
+*{list-style: none;}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{max-width: 100%;max-height: 100%;}
+
+body{
+    background-color: #eeeeee;
+}
+.gloabalHeader{
+    margin: 20px;
+    max-width: 400px;
+}
+@media (min-width: 500px) {
+        .gloabalHeader{
+            margin-left: auto;
+            margin-right: auto;
+        }
+}
+.searchForm {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.searchForm > input{
+    width: 100%;
+    margin-right: 20px;
+    padding-left: 10px;
+    height: 30px;
+}
+.searchForm > button{
+    white-space: nowrap;
+    padding-right: 10px;
+    padding-left: 10px;
+    background: #1890FF;
+    color: #FFFFFF;
+    border:none;
+    border-radius: 4px;
+}
+
+.globalMain{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.siteList{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: space-between;
+}
+@media (min-width: 500px) {
+    .siteList{
+        margin-left: 0;
+        margin-right: -66px;
+        justify-content: left;
+    }
+}
+.siteList .site{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    position: relative;
+}
+
+@media (min-width: 500px) {
+    .site{
+        margin-right: 66px;
+        cursor: pointer;
+    }
+}
+.siteList > li  .siteLogo{
+    font-size: 64px;
+}
+.siteList >li .delete{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    cursor: auto;
+}
+@media (min-width: 500px) {
+    .siteList >li .delete{
+        display: none;
+    }
+}
+.siteList >li:hover .delete {
+    display: block;
+}
+.siteList .delete .icon{
+    width: 25px;
+    height: 25px;
+}
+.siteList .addButton{
+
+}
+.siteList .addButton .icon{
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
